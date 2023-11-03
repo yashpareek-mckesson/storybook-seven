@@ -1,0 +1,44 @@
+.root {
+  width: inherit !important;
+  max-height: none !important;
+
+  div:nth-child(2) {
+    div {
+      background: var(--brand-color-background-cool-grey-3) !important;
+    }
+  }
+}
+
+.titleContent {
+  font-weight: var(--brand-font-weight-400);
+  font-size: 2rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.03em;
+}
+
+.bodyContent {
+  font-weight: var(--brand-font-weight-400);
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  letter-spacing: 0.03em;
+}
+
+.tooltipTextAlign-start {
+  text-align: start;
+}
+
+.tooltipTextAlign-center {
+  text-align: center;
+}
+
+.tooltipTextAlign-end {
+  text-align: end;
+}
+
+.tooltipTextAlign-left {
+  text-align: left;
+}
+
+.tooltipTextAlign-right {
+  text-align: right;
+}

@@ -1,0 +1,99 @@
+.label {
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  color: var(--brand-color-text-dark-slate);
+  font-weight: var(--brand-font-weight-400);
+}
+
+.label.size-sm {
+  font-size: var(--brand-font-size--10);
+  line-height: var(--brand-line-height--small);
+  letter-spacing: 0.002em;
+}
+
+.label.size-xs {
+  font-size: var(--brand-font-size--extra-small) !important;
+  line-height: var(--brand-line-height--small);
+  letter-spacing: 0.002em;
+}
+
+.label.size-md {
+  font-size: var(--brand-font-size--extra-small);
+  line-height: var(--brand-line-height--medium);
+  letter-spacing: 0.001em;
+}
+
+.label.size-lg {
+  font-size: var(--brand-font-size--extra-small);
+  line-height: var(--brand-line-height--medium);
+  letter-spacing: 0.001em;
+}
+
+.requiredIcon {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin: 0px 6px;
+  display: inline;
+  color: var(--brand-color-warning-orange-4);
+}
+
+.showRequiredLabel {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.hasValue {
+  div {
+    color: var(--brand-color-text-black) !important;
+    font-weight: var(--brand-font-weight-600) !important;
+  }
+
+  svg {
+    color: var(--brand-color-text-black) !important;
+    font-weight: var(--brand-font-weight-600) !important;
+  }
+}
+
+.errortext {
+  margin-top: 4px;
+  color: var(--brand-color-warning-orange-4);
+  font-weight: var(--brand-font-weight-600);
+}
+
+.errortext-sm {
+  font-size: var(--brand-font-size--10);
+  line-height: var(--brand-line-height--small);
+  letter-spacing: 0.002em;
+}
+
+.errortext-md {
+  font-size: var(--brand-font-size--10);
+  line-height: var(--brand-line-height--small);
+  letter-spacing: 0.002em;
+}
+
+.errortext-lg {
+  font-size: var(--brand-font-size--extra-small);
+  line-height: var(--brand-line-height--medium);
+  letter-spacing: 0.001em;
+}
+
+.endLabelContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 8px;
+  .endLabel {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .endLabelSuffix {
+    display: block;
+    font-weight: normal;
+    flex-shrink: 0;
+  }
+}

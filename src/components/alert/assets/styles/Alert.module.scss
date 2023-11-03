@@ -1,0 +1,96 @@
+.container {
+  min-height: 32px;
+  z-index: 100;
+
+  .fontStyle {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 8px 24px;
+    border-radius: 4px;
+    letter-spacing: 0.001em;
+    font-weight: var(--brand-font-weight-600);
+  }
+  .sizeSm {
+    border-radius: var(--brand-border-radius--3);
+    font-size: var(--brand-font-size--extra-small);
+    line-height: var(--brand-line-height--medium);
+
+    h2 {
+      line-height: var(--brand-line-height--large);
+      font-size: var(--brand-font-size--small);
+    }
+  }
+
+  .sizeMd {
+    border-radius: var(--brand-border-radius--4);
+    font-size: var(--brand-font-size--small);
+    line-height: var(--brand-line-height--large);
+
+    h2 {
+      font-size: var(--brand-font-size--default);
+      line-height: var(--brand-line-height--m-large);
+    }
+  }
+
+  .sizeLg {
+    border-radius: var(--brand-border-radius--6);
+    font-size: var(--brand-font-size--default);
+    line-height: var(--brand-line-height--m-large);
+
+    h2 {
+      font-size: var(--brand-font-size--large);
+      line-height: var(--brand-line-height--x-large);
+    }
+  }
+
+  .success {
+    @extend .fontStyle;
+    background-color: var(--brand-color-success-green-4);
+    color: var(--brand-color-text-dark-slate);
+    outline: 1px solid var(--brand-color-success-green-2);
+  }
+
+  .info {
+    @extend .fontStyle;
+    background-color: var(--brand-color-background-cool-grey-3);
+    color: var(--brand-color-text-dark-slate);
+    outline: 1px solid var(--brand-color-text-dark-slate);
+  }
+
+  .error {
+    @extend .fontStyle;
+    background-color: var(--brand-color-warning-red-4);
+    color: var(--brand-color-text-dark-slate);
+    outline: 1px solid var(--brand-color-warning-coral);
+  }
+
+  .srOnly {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+
+  .buttonWrap {
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+  }
+
+  .flexContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+
+    h2 {
+      font-weight: var(--brand-font-weight-700);
+    }
+  }
+}

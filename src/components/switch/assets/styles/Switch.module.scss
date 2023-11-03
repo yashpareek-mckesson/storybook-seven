@@ -1,0 +1,16 @@
+.switchbox {
+  display: flex;
+}
+
+.switchbox label {
+  flex: 1;
+  padding: 8px 0px 0px 12px;
+}
+
+.bodySemiBoldMedium {
+  font-size: var(--brand-font-size--default);
+  font-weight: var(--brand-font-weight-600);
+  letter-spacing: -0.002rem;
+  line-height: 1.125rem;
+  color: var(--brand-color-font-black);
+}

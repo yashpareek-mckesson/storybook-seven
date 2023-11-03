@@ -1,0 +1,15 @@
+// usage
+// h-100 for 100% height
+// w-100 for 100% width
+
+$spaceamounts: (25, 50, 75, 100);
+
+// @each $space in $spaceamounts {
+//   .h-#{$space} {
+//     height: #{$space}% !important;
+//   }
+
+//   .w-#{$space} {
+//     width: #{$space}% !important;
+//   }
+// }

@@ -1,0 +1,59 @@
+@import "../design-tokens/index";
+@import "base/base";
+@import "base/utility";
+@import "./base/display";
+@import "base/grid";
+@import "base/lineHeight";
+@import "base/dimension";
+@import "base/fonts";
+@import "abstracts/mixins";
+
+/* Scrollbar changes fro firefox*/
+* {
+  scrollbar-color: var(--brand-color-grey-scale-cool-1) transparent;
+  scrollbar-width: thin;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--brand-color-text-cool-grey);
+  border-radius: var(--brand-border-radius--4);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--brand-color-text-cool-grey);
+}
+
+:focus-visible {
+  outline: 2px solid var(--brand-color-primary-blue) !important;
+  border-radius: var(--brand-border-radius--0-05) !important;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.content {
+  overflow: auto;
+  height: 78vh;
+  background-color: var(--brand-color-grey-scale-warm-3);
+}
+
+.walkthroughBlur {
+  filter: blur(3px);
+}
